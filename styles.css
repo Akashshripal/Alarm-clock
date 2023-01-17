@@ -1,4 +1,5 @@
-;@import url('https://fonts.googleapis.com/css?family=Poppins: wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins: wght@400;500;600&display=swap');
 
 *{
     margin:0;
@@ -29,7 +30,7 @@ body{
 .container img{
     max-width: 155px;
     display: flex;
-    align-content: center;
+    /* align-content: center; */
     margin-left: 110px;
 }
 .container h1{
@@ -42,14 +43,14 @@ body{
     width: 100%;
     justify-content: space-between;
 }
-.container .content.disable{
+.container .content .disable{
     pointer-events: none;
 }
 .content .Time-Row{
     border-radius: 5px;
     padding: 0 10px;
     border: 1px solid #999;
-    width: calc(100%/3 - 5px);
+    width: calc(100% / 3 - 5px);
 }
 .Time-Row select{
     outline: none;

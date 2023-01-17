@@ -1,8 +1,3 @@
-// const selectMenu = document.querySelectorAll("select"),
-// currentTime = document.querySelector("h1"),
-// content = document.querySelectorAll(".content"),
-// setAlarmBtn = document.querySelector("button");
-
 const currentTime = document.querySelector("h1"),
 content = document.querySelector(".content"),
 selectMenu = document.querySelectorAll("select"),
