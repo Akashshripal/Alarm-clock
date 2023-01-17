@@ -16,8 +16,9 @@ let alarmTime , isAlarmSet,
         i = i < 10 ? `0${i}`:i;
         let option = `<option value = "${i}"> ${i} </option>`;
      selectMenu[1].firstElementChild.insertAdjacentHTML("afterend",option);
-    }
-    for(let i=2; i>0; i--){
+    } 
+
+    for(let i=2; i > 0; i--){
         let ampm = i == 1 ? "AM":"PM";
         let option = `<option value = "${ampm}">${ampm}</option>`;
      selectMenu[2].firstElementChild.insertAdjacentHTML("afterend",option);
@@ -30,7 +31,7 @@ let alarmTime , isAlarmSet,
          s = date.getSeconds(),
          ampm = "AM";
          if(h >= 12){
-             h = h -12;
+             h = h - 12;
              ampm = "PM";
          }
          h = h == 0 ? h = 12 : h; 
@@ -51,8 +52,7 @@ let alarmTime , isAlarmSet,
             alarmTime = "";
             ringtone.pause();
             content.classList.remove("disable");
-
-            setAlarmBtn.innerText = "set Alarm";
+            setAlarmBtn.innerText = "Set Alarm";
             return isAlarmSet = false;
         }
         
